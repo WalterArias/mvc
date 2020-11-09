@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+Options -Multiviews
+RewriteEngine On
+#En la siguiente línea debe cambiar el valor "/MVC_OK/public" por sudominio/public
+#RewriteBase /xyz/public
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+</IfModule>
