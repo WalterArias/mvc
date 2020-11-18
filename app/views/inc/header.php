@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="<?php echo RUTA_URL ?>public/css/estilo.css">
 
-    <title>Empresa XYZ</title>
+    <title>Empresa ZZZ</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
     <div class="wrapper">
         <nav id="sidebar">
             <div class="sidebar-header">
-                <h3>EMPRESA XYZ</h3>
+                <h3>EMPRESA ZZZ</h3>
             </div>
 
             <ul class="list-unstyled components">
