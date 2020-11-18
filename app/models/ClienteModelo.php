@@ -29,6 +29,7 @@ class ClienteModelo
         $resultados = $this->db->registros();
         return $resultados;
     }
+    
 
 
 
