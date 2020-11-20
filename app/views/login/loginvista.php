@@ -15,7 +15,7 @@
 
     </div>
     <div class="col-md-6">
-        <form>
+        <form method="POST" action="<?php echo RUTA_URL.'login/validarIngreso' ;?>">
             <div class="form-group">
                 <label for="login">Usuario</label>
                 <input type="text" class="form-control" id="login" aria-describedby="login" name="login" placeholder="Ingrese el usuario registrado en el sistema">

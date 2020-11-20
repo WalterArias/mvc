@@ -1,4 +1,5 @@
 <?php require RUTA_APP . '/views/inc/header.php' ;?>
+<?php  echo var_dump($datos); ?>
 
 <div class="row">
 <div class="col-4">
