@@ -13,7 +13,8 @@ $y_axis_initial = 25;
 //Seteamos el tipo de letra y creamos el título de la página. No es un encabezado no se repetirá
 $pdf->SetFont('Courier', 'B', 9);
 $pdf->Cell(40, 6, '', 0, 0, 'C');
-$pdf->Cell(100, 5, 'Listado General de Clientes', 1, 0, 'C');
+$pdf->Cell(100, 5, 'Listado General de Clientes', 3, 0, 'C');
+
 $pdf->Ln(10);
 
 //Creamos las celdas para los títulos de cada columna y le asignamos un fondo gris y el tipo de letra
