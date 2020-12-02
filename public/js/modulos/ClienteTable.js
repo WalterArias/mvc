@@ -2,7 +2,7 @@ const RUTA_URL = "http://localhost/mvc/ClienteTable/";
 var listarcliente = function () {
   var tabla = $("#mitabla").DataTable({
     ajax: {
-      url: RUTA_URL ,
+      url: RUTA_URL + 'listarClientes',
       dataSrc: "",
     },
     columns: [

@@ -8,7 +8,14 @@ class ClienteTable extends Controlador
 
     public function index()
     {
+       
+        $this->vista('Cliente/ClienteTable');
+    }
+
+    public function listarClientes(){
         $datos = $this->clientemodelo->obtenerClientes();
-        $this->vista('Cliente/ClienteTable', $datos);
+         echo json_encode($datos);
+        
+
     }
 }

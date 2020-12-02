@@ -1,1 +1,4 @@
 Options -Indexes
+
+
+#Header Set Access-Control-Allow-Origin "http://www.agrovirtual.org"

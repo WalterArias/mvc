@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css ">
     <link rel="stylesheet" href="<?php echo RUTA_URL ?>public/css/estilo.css">
 
     <title>Tienda Don Pedro</title>
@@ -75,6 +76,7 @@
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
                                 <?php
+                               error_reporting(E_ERROR);
                                  session_start();
                                // echo  $_SESSION['login'];
                                 echo  'Usuario :'.$_SESSION['nombre'].'  '.$_SESSION['apellidos'];               
