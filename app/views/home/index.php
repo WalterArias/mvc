@@ -1,5 +1,6 @@
 <?php require RUTA_APP . '/views/inc/header.php' ;?>
 <div class="row">
+  
 <div class="col-6">
 <div class="card" >
   <img src="<?php   echo RUTA_URL.'public/img/tienda.jpg';?>" class="card-img-top" alt="...">

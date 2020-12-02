@@ -21,12 +21,24 @@ class Login extends Controlador
         'login' =>$login,
         'password' =>$password
         ];
-        $datos = $this->loginmodelo->validarIngreso($datos);          
+        $datos = $this->loginmodelo->validarIngreso($datos);    // TRUE O FALSE    
        if ($datos== FALSE){
-        echo 'clave errada !';
+        echo 'Los datos ingresados no coinciden !';
+        
+
     } else {
         //echo var_dump($datos);
         $this->vista('home/index', $datos);
     }     
 }
+
+
+ public function cerrarSesion(){
+    session_start();
+    session_unset();
+    session_destroy();
+    $this->vista('login/loginvista');
+
+
+ }
 }

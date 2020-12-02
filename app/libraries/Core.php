@@ -7,7 +7,7 @@
 	Donde articulos es el controlador, editar es el método y 1 es el artículo (parámetro) a editar
 	*/
 	class Core {
-		protected $controladorActual = 'home';
+		protected $controladorActual = 'login';
 		protected $metodoActual = 'index';
 		protected $parametros = [];
 

@@ -19,26 +19,29 @@
         <nav id="sidebar">
             <div class="sidebar-header">
                 <p>
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-basket" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
-</svg>
-                Don Pedro Market
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-basket" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z" />
+                    </svg>
+                    Don Pedro Market
                 </p>
             </div>
 
             <ul class="list-unstyled components">
                 <p>Menu Principal</p>
                 <li>
-                    <a href="<?php  echo RUTA_URL.'home';?>">Inicio</a>
+                    <a href="<?php echo RUTA_URL . 'home'; ?>">Inicio</a>
                 </li>
                 <li>
-                    <a href="<?php  echo RUTA_URL.'Cliente';?>">Cliente</a>
+                    <a href="<?php echo RUTA_URL . 'Cliente'; ?>">Cliente con JS puro</a>
+                </li>
+                <li>
+                    <a href="<?php echo RUTA_URL . 'Clientetable'; ?>">Cliente Usando Datatable</a>
                 </li>
                 <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reportes</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                        <a href="<?php  echo RUTA_URL.'ListadoCliente';?>">Listado de los Clientes</a>
+                            <a href="<?php echo RUTA_URL . 'ListadoCliente'; ?>">Listado de los Clientes</a>
                         </li>
                         <li>
                             <a href="#">Sub 2</a>
@@ -48,7 +51,7 @@
                         </li>
                     </ul>
                 </li>
-                
+
 
 
             </ul>
@@ -71,19 +74,20 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Page</a>
+                                <?php
+                                 session_start();
+                               // echo  $_SESSION['login'];
+                                echo  'Usuario :'.$_SESSION['nombre'].'  '.$_SESSION['apellidos'];               
+                                
+                                
+                                ?>
+                                <!--  <a class="nav-link" href="#"></a> -->
                             </li>
+
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">acceso</a>
+                                <a class="nav-link" href="<?php echo RUTA_URL.'login/cerrarSesion' ;?>">Cerrar Sesion</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-       
