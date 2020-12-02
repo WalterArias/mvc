@@ -9,12 +9,11 @@ class ClienteModelo
         $this->db = new Base;
     }
 
-    public function obtenerClientes()
-    {
+    public function obtenerClientes(){
         $this->db->query('SELECT * from Cliente');
         $resultados = $this->db->registros();
         return $resultados;
-    }
+    }  
 
     public function contarClientes()
     {

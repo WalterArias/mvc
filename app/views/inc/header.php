@@ -28,26 +28,27 @@
 
             <ul class="list-unstyled components">
                 <p>Menu Principal</p>
+                <li>
+                    <a href="<?php  echo RUTA_URL.'home';?>">Inicio</a>
+                </li>
+                <li>
+                    <a href="<?php  echo RUTA_URL.'Cliente';?>">Cliente</a>
+                </li>
                 <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reportes</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="#">Home 1</a>
+                        <a href="<?php  echo RUTA_URL.'ListadoCliente';?>">Listado de los Clientes</a>
                         </li>
                         <li>
-                            <a href="#">Home 2</a>
+                            <a href="#">Sub 2</a>
                         </li>
                         <li>
-                            <a href="#">Home 3</a>
+                            <a href="#">Sub 3</a>
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a href="<?php  echo RUTA_URL.'home';?>">Index</a>
-                </li>
-                <li>
-                    <a href="<?php  echo RUTA_URL.'bienes';?>">Bienes</a>
-                </li>
+                
 
 
             </ul>

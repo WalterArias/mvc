@@ -15,20 +15,18 @@ class Login extends Controlador
 
     public function validarIngreso()
     {
-
         $login = $_POST['login'];   
         $password = $_POST['password'];
-
         $datos = [
         'login' =>$login,
         'password' =>$password
         ];
-
-        $datos = $this->loginmodelo->validarIngreso($datos);   //llamar al modelo
+        $datos = $this->loginmodelo->validarIngreso($datos);          
+       if ($datos== FALSE){
+        echo 'clave errada !';
+    } else {
+        //echo var_dump($datos);
         $this->vista('home/index', $datos);
-    }
-
-
-
-   
+    }     
+}
 }
