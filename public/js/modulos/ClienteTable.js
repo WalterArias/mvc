@@ -1,8 +1,8 @@
-const RUTA_URL = "http://localhost/tiendaclase/cliente/";
+const RUTA_URL = "http://localhost/mvc/ClienteTable/";
 var listarcliente = function () {
   var tabla = $("#mitabla").DataTable({
     ajax: {
-      url: RUTA_URL + "llenarTablaCliente",
+      url: RUTA_URL ,
       dataSrc: "",
     },
     columns: [
