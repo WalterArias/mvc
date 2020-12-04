@@ -1,6 +1,5 @@
 <?php require RUTA_APP . '/views/inc/header.php'; ?>
 
-
 <table class="table" id="mitabla">
 
 </table>

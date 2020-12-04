@@ -5,19 +5,8 @@ var listarcliente = function () {
       url: RUTA_URL + 'listarClientes',
       dataSrc: "",
     },
-    columns: [
-      {
-        defaultContent:
-          "<button type='button' class ='editar btn btn-primary' data-toggle='tooltip' data-placement='top' title='Edita un cliente'> <i class='icon-edit' ></i></button>",
-      },
-      {
-        defaultContent:
-          "<button type='button' class ='eliminar btn btn-primary' data-toggle='tooltip' data-placement='top' title='Elimina un cliente'> <i class='icon-trash'></i></button>",
-      },
-      {
-        defaultContent:
-          "<button type='button' class ='imprimir btn btn-primary' data-toggle='tooltip' data-placement='top' title='Imprimir'> <i class='icon-print'></i></button>",
-      },
+    columns: [  
+     
       {
         data: "idcliente",
       },
@@ -27,25 +16,41 @@ var listarcliente = function () {
       {
         data: "clienteapellidos",
       },
+      {
+        defaultContent:
+          "<button type='button' class ='editar btn btn-secondary' data-toggle='tooltip' data-placement='top' title='Edita un cliente'>Editar</button>",
+      },
+      {
+        defaultContent:
+          "<button type='button' class ='eliminar btn btn-secondary' data-toggle='tooltip' data-placement='top' title='Elimina un cliente'>Eliminar </button>",
+      }
     ],
     columnDefs: [
       {
-        width: "5%",
+        width: "30%",
         targets: 0,
       },
       {
-        width: "5%",
+        width: "30%",
         targets: 1,
       },
       {
-        width: "5%",
+        width: "30%",
         targets: 2,
+      },
+      {
+        width: "5%",
+        targets: 3,
+      },
+      {
+        width: "5%",
+        targets: 4,
       },
     ],
   });
   editar("#mitabla tbody", tabla);
   eliminar("#mitabla tbody", tabla);
-  imprimir("#mitabla tbody", tabla);
+ 
 };
 
 var nuevo = function () {
