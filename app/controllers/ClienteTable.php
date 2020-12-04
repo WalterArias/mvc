@@ -14,8 +14,7 @@ class ClienteTable extends Controlador
 
     public function listarClientes(){
         $datos = $this->clientemodelo->obtenerClientes();
-         echo json_encode($datos);
-        
+         echo json_encode($datos);       
 
     }
 }
