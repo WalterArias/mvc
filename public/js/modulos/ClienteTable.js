@@ -2,10 +2,10 @@ const RUTA_URL = "http://localhost/mvc/ClienteTable/";
 var listarcliente = function () {
   var tabla = $("#mitabla").DataTable({
     ajax: {
-      url: RUTA_URL + 'listarClientes',
+      url: RUTA_URL + "listarClientes",
       dataSrc: "",
     },
-    columns: [  
+    columns: [    
      
       {
         data: "idcliente",
@@ -18,12 +18,12 @@ var listarcliente = function () {
       },
       {
         defaultContent:
-          "<button type='button' class ='editar btn btn-secondary' data-toggle='tooltip' data-placement='top' title='Edita un cliente'>Editar</button>",
+          "<button type='button' class ='editar btn btn-primary' data-toggle='tooltip' data-placement='top' title='Edita un cliente'> edit</button>",
       },
       {
         defaultContent:
-          "<button type='button' class ='eliminar btn btn-secondary' data-toggle='tooltip' data-placement='top' title='Elimina un cliente'>Eliminar </button>",
-      }
+          "<button type='button' class ='eliminar btn btn-primary' data-toggle='tooltip' data-placement='top' title='Elimina un cliente'> Elimina</button>",
+      },
     ],
     columnDefs: [
       {
