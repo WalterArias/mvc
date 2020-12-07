@@ -49,6 +49,40 @@ class ClienteModelo
     	return 'Ha ocurrido un error en la operacion !';
     	}
   }
+  public function crearcliente($datos)
+    {
+        $this->db->query('INSERT INTO cliente (clientenombre, clienteapellidos, direccion,email,fechaingreso,deuda,estado) VALUES (:nombre,  :apellido, :direccion,
+         :email, :fecha, :deuda, :estado);');
+        
+        // Vinculamos los valores que llegan del formulario con la consulta sql
+        $this->db->bind(':nombre', $datos['nombre']);
+        $this->db->bind(':apellido', $datos['apellido']);
+        $this->db->bind(':direccion', $datos['direccion']);
+        $this->db->bind(':email', $datos['email']);
+        $this->db->bind(':fecha', $datos['fecha']);
+        $this->db->bind(':deuda', $datos['deuda']);
+        $this->db->bind(':estado', $datos['estado']);
+        // Ejecutamos la consulta
+        if ($this->db->execute()) {
+            return 'Inserción exitosa';
+        } else {
+            return 'Error en la inserción';
+        }
+    }
+
+ 
+    public function eliminarCliente($datos)
+    {
+        $this->db->query('DELETE FROM cliente WHERE idcliente = :id');
+        $this->db->bind(':id', $datos['id_cliente']);
+
+        // Ejecutar
+        if ($this->db->execute()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
   }
 

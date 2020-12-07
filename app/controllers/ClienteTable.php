@@ -49,6 +49,15 @@ class ClienteTable extends Controlador
             echo json_encode($datos);
         }
     }
+    public function eliminarCliente()
+    {
+        $datos =[
+            'id_cliente' => $_POST['id']
+        ];
+
+        $datos = $this->clientemodelo->eliminarCliente($datos);
+        echo json_encode($datos);
+    }
 
 
 }
