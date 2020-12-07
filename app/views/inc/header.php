@@ -38,6 +38,9 @@
                 <li>
                     <a href="<?php echo RUTA_URL . 'Clientetable'; ?>">Cliente Usando Datatable</a>
                 </li>
+                <li>
+                    <a href="<?php echo RUTA_URL . 'Factura'; ?>">Factura</a>
+                </li>
                 <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reportes</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">

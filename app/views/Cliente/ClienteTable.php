@@ -12,13 +12,13 @@
         <div class="card-body">
             <table id="mitabla" class="table table-striped table-bordered">
                 <thead>
-                    <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
+                    <tr>                       
                         <th>id</th>
                         <th>Nombre</th>
                         <th>Apellido</th>
+                        <th>Acción</th>
+                        <th>Acción</th>
+                        <th>Acción</th>
                     </tr>
                 </thead>
             </table>

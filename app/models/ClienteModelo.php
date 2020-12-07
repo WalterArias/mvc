@@ -29,7 +29,28 @@ class ClienteModelo
         return $resultados;
     }
     
+  public function actualizarCliente($datos){
+    $this->db->query('UPDATE cliente SET clientenombre = :nombre, clienteapellidos = :apellido,
+    direccion = :direccion, email = :email, fechaingreso= :fecha, Deuda = :deuda, estado = :estado 
+    WHERE idcliente = :id');
+    //Vinculamos los valores
+    	$this->db->bind(':id', $datos['id']);
+        $this->db->bind(':nombre', $datos['nombre']);
+         $this->db->bind(':apellido', $datos['apellido']);
+         $this->db->bind(':direccion', $datos['direccion']);
+         $this->db->bind(':email', $datos['email']);
+         $this->db->bind(':fecha', $datos['fecha']);
+         $this->db->bind(':deuda', $datos['deuda']);              
+     	$this->db->bind(':estado', $datos['estado']);        
+    	// Ejecutar
+    	if ($this->db->execute()){
+    		return 'Operacion realizada con exito';
+    	} else {
+    	return 'Ha ocurrido un error en la operacion !';
+    	}
+  }
 
+  }
 
 
 
@@ -86,4 +107,5 @@ class ClienteModelo
     // 		return false;
     // 	}
     // }
-}
+
+    

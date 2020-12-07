@@ -5,8 +5,7 @@ var listarcliente = function () {
       url: RUTA_URL + "listarClientes",
       dataSrc: "",
     },
-    columns: [    
-     
+    columns: [
       {
         data: "idcliente",
       },
@@ -18,34 +17,44 @@ var listarcliente = function () {
       },
       {
         defaultContent:
-          "<button type='button' class ='editar btn btn-primary' data-toggle='tooltip' data-placement='top' title='Edita un cliente'> edit</button>",
+          "<button type='button' class ='editar btn btn-primary' data-toggle='tooltip' data-placement='top' title='Edita un cliente'> edita</button>",
       },
       {
         defaultContent:
-          "<button type='button' class ='eliminar btn btn-primary' data-toggle='tooltip' data-placement='top' title='Elimina un cliente'> Elimina</button>",
+          "<button type='button' class ='eliminar btn btn-primary' data-toggle='tooltip' data-placement='top' title='Elimina un cliente'> elimina</button>",
       },
+      {
+        defaultContent:
+          "<button type='button' class ='imprimir btn btn-primary' data-toggle='tooltip' data-placement='top' title='Imprimir'> imprime</button>",
+      },
+    
     ],
     columnDefs: [
       {
-        width: "30%",
+        width: "5%",
         targets: 0,
       },
       {
-        width: "30%",
+        width: "40%",
         targets: 1,
       },
       {
-        width: "30%",
+        width: "40%",
         targets: 2,
       },
-      {
-        width: "5%",
-        targets: 3,
-      },
-      {
-        width: "5%",
-        targets: 4,
-      },
+        {
+          width: "5%",
+          targets: 3,
+        },
+        {
+          width: "5%",
+          targets: 4,
+        },
+        {
+          width: "5%",
+          targets: 5,
+        },
+      
     ],
   });
   editar("#mitabla tbody", tabla);
@@ -82,7 +91,7 @@ var guardar = function () {
       contentType: false,
     })
       .done(function (data) {
-        alert("Accion Realizada con exito !");
+        alert(data);
         mostrarForm(false);
         $("#mitabla").DataTable().ajax.reload();
       })
