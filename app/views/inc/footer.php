@@ -1,10 +1,12 @@
 
 
-<footer class="footer mt-auto py-3">
+<script src="<?php echo RUTA_URL; ?>public/js/menu.js"></script>
+
+<footer>
   <div class="container">
-    <p>Versión 2.0 ::: Desarrollado por </p>
-    <a href="https://mentebyte.wordpress.com/">Mentebyte</a>
-   <!--  <span class="text-muted">Place sticky footer content here.</span> -->
+  <br>
+    <p>::: Versión 2.0 ::: Desarrollado por <a href="https://mentebyte.wordpress.com/">Mentebyte</a> </p>
+    <p>Ejemplo Didáctico usando Jquery-PHP-Mysql  ::: 2020 :::</p>   
   </div>
 </footer>
 </div>  <!-- cierre del contenido -->
@@ -13,3 +15,4 @@
 
   </body>
 </html>
+

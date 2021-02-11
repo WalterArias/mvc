@@ -11,4 +11,5 @@ class ListadoCliente extends Controlador
         $datos = $this->clientemodelo->obtenerClientes();
         $this->vista('Reportes/ListadoCliente', $datos);
     }
+    
 }

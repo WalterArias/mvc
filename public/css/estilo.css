@@ -1,10 +1,6 @@
-
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
-
 body {
-   font-family: 'Poppins', sans-serif;
- 
+    font-family: 'Poppins', sans-serif;
     background: #fafafa;
 }
 
@@ -30,7 +26,7 @@ a:focus {
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
-    box-shadow: 1px 1px 3px #0000001a;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-btn {
@@ -59,9 +55,9 @@ a:focus {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #424242;
+    background: #3e3e3f;
     color: #fff;
-   transition: all 0.3s; 
+    transition: all 0.3s;
 }
 
 #sidebar.active {
@@ -70,12 +66,12 @@ a:focus {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #373738;
+    background: #3e3e3f;
 }
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #373738;
+    border-bottom: 1px solid #3e3e3f;
 }
 
 #sidebar ul p {
@@ -90,14 +86,14 @@ a:focus {
 }
 
 #sidebar ul li a:hover {
-    color: #373738;
+    color: #3e3e3f;;
     background: #fff;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #747474;
+    background: #3e3e3f;;
 }
 
 a[data-toggle="collapse"] {
@@ -109,10 +105,37 @@ a[data-toggle="collapse"] {
     position: absolute;
     top: 50%;
     right: 20px;
-    transform: translateY(-30%);
+    transform: translateY(-50%);
 }
 
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #3e3e3f;;
+}
 
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #3e3e3f;
+}
+
+a.article,
+a.article:hover {
+    background: #3e3e3f !important;
+    color: #fff !important;
+}
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -138,10 +161,9 @@ a[data-toggle="collapse"] {
     }
     #sidebarCollapse span {
         display: none;
-
-
-        
     }
 }
-
-
+footer{
+text-align: center;
+font-size: small;
+}

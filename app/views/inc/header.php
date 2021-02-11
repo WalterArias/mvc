@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html>
 
 <head>
     <!-- Required meta tags -->
@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css ">
-    <link rel="stylesheet" href="<?php echo RUTA_URL ?>public/css/estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css ">
 
+    <!-- Font Awesome JS -->
+   
+    <link rel="stylesheet" href="<?php echo RUTA_URL ?>public/css/estilo.css">
     <title>Tienda Don Pedro</title>
 </head>
 
@@ -26,45 +29,53 @@
                     Don Pedro Market
                 </p>
             </div>
-
             <ul class="list-unstyled components">
-                <p>Menu Principal</p>
-                <li>
-                    <a href="<?php echo RUTA_URL . 'home'; ?>">Inicio</a>
-                </li>
-                <li>
-                    <a href="<?php echo RUTA_URL . 'Cliente'; ?>">Cliente con JS puro</a>
-                </li>
-                <li>
-                    <a href="<?php echo RUTA_URL . 'Clientetable'; ?>">Cliente Usando Datatable</a>
-                </li>
-                <li>
-                    <a href="<?php echo RUTA_URL . 'Factura'; ?>">Factura</a>
-                </li>
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reportes</a>
+
+            <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" aria-controls="homeSubmenu"class="dropdown-toggle">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a href="<?php echo RUTA_URL . 'ListadoCliente'; ?>">Listado de los Clientes</a>
+                            <a href="#">Home 1</a>
                         </li>
                         <li>
-                            <a href="#">Sub 2</a>
+                            <a href="#">Home 2</a>
                         </li>
                         <li>
-                            <a href="#">Sub 3</a>
+                            <a href="#">Home 3</a>
                         </li>
                     </ul>
                 </li>
-
-
-
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
             </ul>
+
         </nav>
 
         <div id="content">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-
+                
                     <button type="button" id="sidebarCollapse" class="btn btn-secondary">
                         <i class="fas fa-align-left"></i>
                         <span><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -79,18 +90,18 @@
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item active">
                                 <?php
-                               error_reporting(E_ERROR);
-                                 session_start();
-                               // echo  $_SESSION['login'];
-                                echo  'Usuario :'.$_SESSION['nombre'].'  '.$_SESSION['apellidos'];               
-                                
-                                
+                                error_reporting(E_ERROR);
+                                session_start();
+                                // echo  $_SESSION['login'];
+                                echo  'Usuario :' . $_SESSION['nombre'] . '  ' . $_SESSION['apellidos'];
+
+
                                 ?>
                                 <!--  <a class="nav-link" href="#"></a> -->
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="<?php echo RUTA_URL.'login/cerrarSesion' ;?>">Cerrar Sesion</a>
+                                <a class="nav-link" href="<?php echo RUTA_URL . 'login/cerrarSesion'; ?>">Cerrar Sesion</a>
                             </li>
                         </ul>
                     </div>

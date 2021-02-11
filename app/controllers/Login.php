@@ -23,8 +23,7 @@ class Login extends Controlador
         ];
         $datos = $this->loginmodelo->validarIngreso($datos);    // TRUE O FALSE    
        if ($datos== FALSE){
-        echo 'Los datos ingresados no coinciden !';
-        
+        echo 'Los datos ingresados no coinciden !';  
 
     } else {
         //echo var_dump($datos);
@@ -38,7 +37,5 @@ class Login extends Controlador
     session_unset();
     session_destroy();
     $this->vista('login/loginvista');
-
-
  }
 }
