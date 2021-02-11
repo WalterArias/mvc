@@ -5,10 +5,9 @@ class Cliente extends Controlador
     {
         $this->clientemodelo = $this->modelo('ClienteModelo');
     }
-
     public function index()
     {
-        $datos = $this->clientemodelo->obtenerClientes();
+        $datos = $this->clientemodelo->obtenerClientes();  
         $this->vista('Cliente/ClienteVista', $datos);
     }
 }

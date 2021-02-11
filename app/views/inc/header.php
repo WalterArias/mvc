@@ -8,11 +8,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-   
+
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css ">
 
     <!-- Font Awesome JS -->
-   
+
     <link rel="stylesheet" href="<?php echo RUTA_URL ?>public/css/estilo.css">
     <title>Tienda Don Pedro</title>
 </head>
@@ -31,8 +31,8 @@
             </div>
             <ul class="list-unstyled components">
 
-            <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" aria-controls="homeSubmenu"class="dropdown-toggle">Home</a>
+               <!--  <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" aria-controls="homeSubmenu" class="dropdown-toggle">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
                             <a href="#">Home 1</a>
@@ -44,29 +44,41 @@
                             <a href="#">Home 3</a>
                         </li>
                     </ul>
+                </li> -->
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+              
+                <li>
+                    <a href="<?php  echo RUTA_URL.'ClienteTable'?>">Cliente</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#">Pedido</a>
                 </li>
                 <li>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <a href="#reportes" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reportes</a>
+                    <ul class="collapse list-unstyled" id="reportes">
+                       
                         <li>
-                            <a href="#">Page 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 2</a>
+                            <a href="<?php  echo RUTA_URL.'ListadoCliente'?>">Listado de Clientes</a>
                         </li>
                         <li>
                             <a href="#">Page 3</a>
                         </li>
                     </ul>
                 </li>
+             
                 <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Exportar</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                       
+                        <li>
+                            <a href="<?php  echo RUTA_URL.'Cliente'?>">Exportar Clientes a Excel</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
 
@@ -75,7 +87,7 @@
         <div id="content">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                
+
                     <button type="button" id="sidebarCollapse" class="btn btn-secondary">
                         <i class="fas fa-align-left"></i>
                         <span><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
