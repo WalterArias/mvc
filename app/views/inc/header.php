@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -50,10 +50,13 @@
                 </li>
               
                 <li>
-                    <a href="<?php  echo RUTA_URL.'ClienteTable'?>">Cliente</a>
+                    <a href="<?php  echo RUTA_URL.'Cliente'?>">Cliente</a>
                 </li>
                 <li>
-                    <a href="#">Pedido</a>
+                    <a href="<?php  echo RUTA_URL.'Articulo'?>">Articulo</a>
+                </li>
+                <li>
+                    <a href="<?php  echo RUTA_URL.'Pedido'?>">Pedido</a>
                 </li>
                 <li>
                     <a href="#reportes" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reportes</a>
