@@ -8,7 +8,7 @@ class ArticuloModelo
     {
         $this->db = new Base;
     }
-
+  
     public function obtenerArticulos()
     {
         $this->db->query('SELECT * from Articulo');

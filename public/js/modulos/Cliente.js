@@ -17,15 +17,15 @@ var listarcliente = function () {
       },
       {
         defaultContent:
-          "<button type='button' class ='editar btn btn-primary' data-toggle='tooltip' data-placement='top' title='Edita un cliente'> edita</button>",
+          "<button type='button' class ='editar btn btn-sm btn-light' data-toggle='tooltip' data-placement='top' title='Edita un cliente'> <i class='bi bi-pencil-square'></i></button>",
       },
       {
         defaultContent:
-          "<button type='button' class ='eliminar btn btn-primary' data-toggle='tooltip' data-placement='top' title='Elimina un cliente'> elimina</button>",
+          "<button type='button' class ='eliminar btn btn-sm btn-light' data-toggle='tooltip' data-placement='top' title='Elimina un cliente'> <i class='bi bi-trash'></i></button>",
       },
       {
         defaultContent:
-          "<button type='button' class ='imprimir btn btn-primary' data-toggle='tooltip' data-placement='top' title='Imprimir'> imprime</button>",
+          "<button type='button' class ='imprimir btn  btn-sm btn-light' data-toggle='tooltip' data-placement='top' title='Imprimir'> <i class='bi bi-printer-fill'></i></button>",
       },
     
     ],

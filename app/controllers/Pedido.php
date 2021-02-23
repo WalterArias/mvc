@@ -11,4 +11,5 @@ class Pedido extends Controlador
         $this->vista('Pedido/PedidoVista');
     }
     
+    
 }

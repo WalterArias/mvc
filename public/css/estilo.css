@@ -1,16 +1,18 @@
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+/* @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"; */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 body {
-    font-family: 'Poppins', sans-serif;
+   /* font-family: 'Poppins', sans-serif; */
     background: #fafafa;
+    /* font-size: 10px; */
 }
 
-p {
+/* p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
     color: #999;
-}
+} */
 
 a,
 a:hover,
@@ -21,7 +23,7 @@ a:focus {
 }
 
 .navbar {
-    padding: 15px 10px;
+   padding: 1px;
     background: #fff;
     border: none;
     border-radius: 0;
@@ -65,8 +67,9 @@ a:focus {
 }
 
 #sidebar .sidebar-header {
-    padding: 20px;
-    background: #3e3e3f;
+    padding: 15px;
+    background: #000000;
+    color: #fff;
 }
 
 #sidebar ul.components {
@@ -136,6 +139,11 @@ a.article:hover {
     background: #3e3e3f !important;
     color: #fff !important;
 }
+hr.estilo1{
+    
+	border-top: 1px solid #8c8b8b;
+}
+
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -146,6 +154,7 @@ a.article:hover {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+  
 }
 
 /* ---------------------------------------------------
