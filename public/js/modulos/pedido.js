@@ -16,7 +16,7 @@ var listarClientes = function () {
       },
       {
         defaultContent:
-          "<button type='button' class ='selecciona btn btn-sm btn-light' data-toggle='tooltip' data-placement='top' title='Selecciona Cliente'> <i class='bi bi-check2-square'></i></button>",
+          "<button type='button' class ='AgregarCliente btn btn-sm btn-light' id = 'AgregarCliente' data-toggle='tooltip' data-placement='top' title='Selecciona Cliente'> <i class='bi bi-check2-square'></i></button>",
       },
      
     
@@ -42,7 +42,7 @@ var listarClientes = function () {
       
     ],
   });
-  
+  AgregarCliente("#tablaClientes tbody", tabla1);
 };
  var listarProductos = function () {
   var tabla2 = $("#tablaArticulos").DataTable({
@@ -62,7 +62,7 @@ var listarClientes = function () {
       },
       {
         defaultContent:
-          "<button type='button' class ='selecciona btn btn-sm btn-light' data-toggle='tooltip' data-placement='top' title='Selecciona Articulo'> <i class='bi bi-check2-square'></i></button>",
+          "<button type='button' class =' AgregarArticulo btn btn-sm btn-light'  id = 'AgregarArticulo' data-toggle='tooltip' data-placement='top' title='Selecciona Articulo'> <i class='bi bi-check2-square'></i></button>",
       },
      
     
@@ -84,7 +84,8 @@ var listarClientes = function () {
       
     ],
   });
-  
+ 
+  AgregarArticulo("#tablaArticulos tbody", tabla2)
 };
  
 
@@ -104,15 +105,27 @@ var MostrarForm = function (estado) {
   }
 };
 
-var AgregarDetalle = function (idarticulo, articulo) {
+var AgregarArticulo = function (tbody, table) {
+  $("#tablaArticulos tbody").on("click",'button',function(){
+    var dato = table.row($(this).parents("tr")).data();
+  let fila = '<tr class = filas id = fila>'+
+  '<td> <input type = "text" name ="idArticulo" value ="'+dato.idarticulo+'"></td>'+
+  '<td> <input type = "text" name ="idArticulo" value ="'+dato.descripcion+'"></td>'+
+  '<td> <input type = "text" name ="idArticulo" value ="'+dato.precio+'"></td>'+
+  '</tr>' 
+  $("#detalle").append(fila);
+});
+};
+var AgregarCliente = function(){
 
-}
+};
 
 $(document).ready(function () {
   Nuevo();
   MostrarForm(false);
-  AgregarDetalle();
+  AgregarArticulo();
   listarClientes();
   listarProductos();  
+  AgregarCliente();
 
 });

@@ -39,7 +39,7 @@
                         <div class="col-md-10">
                             <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#frmArticulos"> + Articulo
                                 <i class="bi bi-table"></i></button>
-                            <table class="table table-sm">
+                            <table class="table table-sm" id ="detalle">
                                 <thead>
                                     <tr>
                                         <th>id</th>
