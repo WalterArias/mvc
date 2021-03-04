@@ -20,14 +20,14 @@
     <div class="wrapper">
         <nav id="sidebar">
             <div class="sidebar-header">
-           
-                <p>               
-                    Don Pedro Supertienda  <i class="bi bi-handbag"></i>
+
+                <p>
+                    Don Pedro Supertienda <i class="bi bi-handbag"></i>
                 </p>
             </div>
             <ul class="list-unstyled components">
 
-               <!--  <li class="active">
+                <!--  <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" aria-controls="homeSubmenu" class="dropdown-toggle">Home</a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
@@ -44,35 +44,35 @@
                 <li>
                     <a href="#">Inicio</a>
                 </li>
-              
+
                 <li>
-                    <a href="<?php  echo RUTA_URL.'Cliente'?>">Cliente</a>
+                    <a href="<?php echo RUTA_URL . 'Cliente' ?>">Cliente</a>
                 </li>
                 <li>
-                    <a href="<?php  echo RUTA_URL.'Articulo'?>">Articulo</a>
+                    <a href="<?php echo RUTA_URL . 'Articulo' ?>">Articulo</a>
                 </li>
                 <li>
-                    <a href="<?php  echo RUTA_URL.'Pedido'?>">Pedido</a>
+                    <a href="<?php echo RUTA_URL . 'Pedido' ?>">Pedido</a>
                 </li>
                 <li>
                     <a href="#reportes" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reportes</a>
                     <ul class="collapse list-unstyled" id="reportes">
-                       
+
                         <li>
-                            <a href="<?php  echo RUTA_URL.'ListadoCliente'?>">Listado de Clientes</a>
+                            <a href="<?php echo RUTA_URL . 'ListadoCliente' ?>">Listado de Clientes</a>
                         </li>
                         <li>
                             <a href="#">Page 3</a>
                         </li>
                     </ul>
                 </li>
-             
+
                 <li>
                     <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Exportar</a>
                     <ul class="collapse list-unstyled" id="pageSubmenu">
-                       
+
                         <li>
-                            <a href="<?php  echo RUTA_URL.'Cliente'?>">Exportar Clientes a Excel</a>
+                            <a href="<?php echo RUTA_URL . 'Cliente' ?>">Exportar Clientes a Excel</a>
                         </li>
                         <li>
                             <a href="#">Page 3</a>
@@ -87,10 +87,10 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
 
-                    <button type="button" id="sidebarCollapse" class="btn btn-sm btn-secondary">                     
-                    <i class="bi bi-arrow-left-short"></i>
+                    <button type="button" id="sidebarCollapse" class="btn btn-sm btn-secondary">
+                        <i class="bi bi-arrow-left-short"></i>
                     </button>
-                   <!--  <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <!--  <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="bi bi-arrow-left-short"></i>
                     </button> -->
 

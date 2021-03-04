@@ -3,7 +3,7 @@
     <div class="col-md-12">
         <div class="card" id="vistatabla">
             <div class="card-header">
-                <b>Pedido</b> <button type="button" id="nuevo" class="btn btn-sm btn-success" data-toggle='tooltip' title=' Agregar un Pedido'> <i class="bi bi-file-plus"></i> </button>
+                <b>Pedido</b> <!-- <button type="button" id="nuevo" class="btn btn-sm btn-success" data-toggle='tooltip' title=' Agregar un Pedido'> <i class="bi bi-file-plus"></i> </button> -->
             </div>
         </div> <!-- tabla inicial con los pedidos -->
         <div class="card" id="formulario">
@@ -20,9 +20,6 @@
                         <div class="col-sm2">
                             <div class="input-group">
                                 <input type="text" class="form-control  form-control-sm" placeholder="Cliente">
-                                <!--     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                                    Launch demo modal
-                                </button> -->
                                 <span class="input-group-btn">
                                     <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#frmClientes">
                                         <i class="bi bi-search"></i></button>
@@ -39,20 +36,26 @@
                         <div class="col-md-10">
                             <button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#frmArticulos"> + Articulo
                                 <i class="bi bi-table"></i></button>
-                            <table class="table table-sm" id ="detalle">
+                            <table class="table table-sm" id="detalle">
                                 <thead>
                                     <tr>
-                                        <th>id</th>
-                                        <th>idArticulo</th>
+                                        <th>id</th>                                       
                                         <th>Descripcion</th>
-                                        <th>Cantidad</th>
+                                        <th >Cantidad</th>
                                         <th>Vr. Unitario</th>
                                         <th>SubTotal</th>
                                     </tr>
                                 </thead>
                                 <tfoot>
-                                    <th>Total</th>
+                                <th>id</th>                                       
+                                        <th>Descripcion</th>
+                                        <th>Cantidad</th>
+                                        <th>Vr. Unitario</th>
+                                        <th class ="p-3 mb-2 bg-info text-white"><span id ="granTotal">TOTAL</span></th>
                                 </tfoot>
+                               
+                            
+                               
                             </table>
                         </div>
                     </div>
@@ -60,16 +63,17 @@
                         <!--  botonera -->
                         <button class="btn btn-sm btn-secondary" type="button" id="imprimir">
                             <i class="bi bi-printer"></i></button>
-                        <button class="btn btn-sm btn-secondary" type="button" id="cancelar">
-                            <i class="bi bi-x-square"></i></button>
+                       <!--  <button class="btn btn-sm btn-secondary" type="button" id="cancelar">
+                            <i class="bi bi-x-square"></i></button> -->
+                            <input class="btn btn-sm btn-success" type="reset" value="reset">
                         <input id="guardar" class="btn btn-sm btn-success" type="submit" value="Guardar">
                 </form>
             </div> <!-- fin del card -->
         </div>
-    </div>
+    </div>s
 </div>
 <!--modales -->
-<!-- Modal -->
+<!-- Modal de los clientes -->
 <div class="modal fade" id="frmClientes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -91,14 +95,16 @@
                 </table>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary"  data-bs-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>
 </div>
-<div class="modal fade" id="frmArticulos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+<!-- forma modal para seleccionar articulos -->
+
+<div class="modal" id="frmArticulos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Articulos</h5>
@@ -118,8 +124,8 @@
                 </table>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" id ="btnCerrar" class="btn btn-primary">Cerrar</button> -->
             </div>
         </div>
     </div>

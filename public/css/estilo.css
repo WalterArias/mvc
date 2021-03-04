@@ -1,9 +1,9 @@
 /* @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"; */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 body {
-   /* font-family: 'Poppins', sans-serif; */
-    background: #fafafa;
-    /* font-size: 10px; */
+  /* font-family: 'Poppins', sans-serif; */
+  background: #fafafa;
+  /* font-size: 10px; */
 }
 
 /* p {
@@ -17,31 +17,31 @@ body {
 a,
 a:hover,
 a:focus {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s;
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
 }
 
 .navbar {
-   padding: 1px;
-    background: #fff;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-btn {
-    box-shadow: none;
-    outline: none !important;
-    border: none;
+  box-shadow: none;
+  outline: none !important;
+  border: none;
 }
 
 .line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #ddd;
-    margin: 40px 0;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0;
 }
 
 /* ---------------------------------------------------
@@ -49,112 +49,109 @@ a:focus {
 ----------------------------------------------------- */
 
 .wrapper {
-    display: flex;
-    width: 100%;
-    align-items: stretch;
+  display: flex;
+  width: 100%;
+  align-items: stretch;
 }
 
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    background: #3e3e3f;
-    color: #fff;
-    transition: all 0.3s;
+  min-width: 250px;
+  max-width: 250px;
+  background: #3e3e3f;
+  color: #fff;
+  transition: all 0.3s;
 }
 
 #sidebar.active {
-    margin-left: -250px;
+  margin-left: -250px;
 }
 
 #sidebar .sidebar-header {
-    padding: 15px;
-    background: #000000;
-    color: #fff;
+  padding: 15px;
+  background: #000000;
+  color: #fff;
 }
 
 #sidebar ul.components {
-    padding: 20px 0;
-    border-bottom: 1px solid #3e3e3f;
+  padding: 20px 0;
+  border-bottom: 1px solid #3e3e3f;
 }
 
 #sidebar ul p {
-    color: #fff;
-    padding: 10px;
+  color: #fff;
+  padding: 10px;
 }
 
 #sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
 }
 
 #sidebar ul li a:hover {
-    color: #3e3e3f;;
-    background: #fff;
+  color: #3e3e3f;
+  background: #fff;
 }
 
-#sidebar ul li.active>a,
+#sidebar ul li.active > a,
 a[aria-expanded="true"] {
-    color: #fff;
-    background: #3e3e3f;;
+  color: #fff;
+  background: #3e3e3f;
 }
 
 a[data-toggle="collapse"] {
-    position: relative;
+  position: relative;
 }
 
 .dropdown-toggle::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 }
 
 ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #3e3e3f;;
+  font-size: 0.9em !important;
+  padding-left: 30px !important;
+  background: #3e3e3f;
 }
 
 ul.CTAs {
-    padding: 20px;
+  padding: 20px;
 }
 
 ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
+  text-align: center;
+  font-size: 0.9em !important;
+  display: block;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 
 a.download {
-    background: #fff;
-    color: #3e3e3f;
+  background: #fff;
+  color: #3e3e3f;
 }
 
 a.article,
 a.article:hover {
-    background: #3e3e3f !important;
-    color: #fff !important;
+  background: #3e3e3f !important;
+  color: #fff !important;
 }
-hr.estilo1{
-    
-	border-top: 1px solid #8c8b8b;
+hr.estilo1 {
+  border-top: 1px solid #8c8b8b;
 }
-
 
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
 
 #content {
-    width: 100%;
-    padding: 20px;
-    min-height: 100vh;
-    transition: all 0.3s;
-  
+  width: 100%;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s;
 }
 
 /* ---------------------------------------------------
@@ -162,17 +159,18 @@ hr.estilo1{
 ----------------------------------------------------- */
 
 @media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
+  #sidebar {
+    margin-left: -250px;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #sidebarCollapse span {
+    display: none;
+  }
 }
-footer{
-text-align: center;
-font-size: small;
+footer {
+  text-align: center;
+  font-size: small;
 }
+
