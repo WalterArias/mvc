@@ -117,12 +117,12 @@ var agregarArticulo = function (tbody, table) {
       "</tr>";
     contadorFila++;
     $("#detalle").append(fila);
-    $("#frmArticulos").modal("hide");
+    $("#frmArticulos").modal("hide");   //cierra la modal
     calcularSubtotalFila();
   });
 };
 
-var calcularSubtotalFila = function () {
+const calcularSubtotalFila = function () {
   //arrays para almacenar los valores de las filas
   let cant = document.getElementsByName("cantidad[]");
   let prec = document.getElementsByName("precio[]");
@@ -137,27 +137,27 @@ var calcularSubtotalFila = function () {
   calcularTotalPedido();
 };
 
-var calcularTotalPedido = function () {
+const calcularTotalPedido = function () {
   let subt = document.getElementsByName("subtotal[]");
   let total = 0.0;
   for (let i = 0; i < subt.length; i++) {
     total += parseInt(subt[i].value);
+   
   }
   $("#granTotal").text("$ " + total);
 };
 
-var eliminarFila = function (indice) {
+const eliminarFila = function (indice) {
   $("#fila" + indice).remove();
   calcularTotalPedido();
 };
 
-var guardar = function () {
+const guardar = function () {
   $("form").on("submit", function (e) {
     e.preventDefault();
-    var datos = new FormData($("form")[0]);
-   
+    var datos = new FormData($("form")[0]);   
     $.ajax({
-      url: RUTA_URL + "crearCliente",
+      url: "http://localhost/mvc/Pedido/" + "crearPedido",,
       method: "POST",
       data: datos,
       processData: false,
